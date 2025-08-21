@@ -9,6 +9,7 @@
   "subCriterions": [
     {
       "name": "Project Structure and File Organization",
+      "id": "A1",
       "aspects": [
         {
           "type": "measurement",
@@ -69,11 +70,40 @@
           "calculation": {
             "type": "pass-or-fail"
           }
+        },
+        {
+          "type": "judgement",
+          "description": "Code organization and maintainability",
+          "maxMark": 0,
+          "wsosSection": 1,
+          "extraDescription": "",
+          "calculation": {
+            "type": "scale",
+            "scale": [
+              {
+                "score": 0,
+                "description": "HTML files are unorganized with poor indentation and no meaningful structure"
+              },
+              {
+                "score": 1,
+                "description": "HTML files have basic indentation but lack semantic structure"
+              },
+              {
+                "score": 2,
+                "description": "HTML files are well-organized with good indentation and some semantic elements"
+              },
+              {
+                "score": 3,
+                "description": "HTML files are excellently organized with proper indentation, semantic elements, and clear structure for easy maintenance"
+              }
+            ]
+          }
         }
       ]
     },
     {
       "name": "Content Communication and Theme Implementation",
+      "id": "A2",
       "aspects": [
         {
           "type": "measurement",
@@ -119,6 +149,7 @@
     },
     {
       "name": "Visual Design and Layout Implementation", 
+      "id": "A3",
       "aspects": [
         {
           "type": "measurement",
@@ -153,7 +184,7 @@
         {
           "type": "measurement",
           "description": "Purple-orange-cyan color scheme implementation",
-          "maxMark": 1,
+          "maxMark": 0.5,
           "wsosSection": 3,
           "extraDescription": "Uses specified vibrant purple (#7c3aed), orange (#f97316), cyan (#06b6d4) color palette consistently",
           "calculation": {
@@ -163,7 +194,7 @@
         {
           "type": "measurement",
           "description": "Typography consistency and hierarchy",
-          "maxMark": 0.75,
+          "maxMark": 0.5,
           "wsosSection": 3,
           "extraDescription": "Consistent font family, proper text hierarchy, and good readability across all pages",
           "calculation": {
@@ -173,7 +204,7 @@
         {
           "type": "measurement",
           "description": "Card grid layouts with consistent spacing",
-          "maxMark": 0.75,
+          "maxMark": 0.5,
           "wsosSection": 3,
           "extraDescription": "Course and mentor cards are arranged in proper grid layouts with consistent spacing and alignment",
           "calculation": {
@@ -183,7 +214,7 @@
         {
           "type": "measurement",
           "description": "Images and icons properly implemented",
-          "maxMark": 0.75,
+          "maxMark": 0.5,
           "wsosSection": 3,
           "extraDescription": "Images are optimized, properly sized, and icons (SVG) are correctly placed and styled",
           "calculation": {
@@ -193,17 +224,74 @@
         {
           "type": "measurement",
           "description": "Visual consistency across all pages",
-          "maxMark": 0.25,
+          "maxMark": 0.5,
           "wsosSection": 3,
           "extraDescription": "All pages follow the same visual design system and branding consistency",
           "calculation": {
             "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Overall visual design quality and creativity",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "",
+          "calculation": {
+            "type": "scale",
+            "scale": [
+              {
+                "score": 0,
+                "description": "Design lacks creativity and visual appeal, poor use of color scheme and layout"
+              },
+              {
+                "score": 1,
+                "description": "Design has basic visual appeal but limited creativity in layout and color usage"
+              },
+              {
+                "score": 2,
+                "description": "Design is visually appealing with good use of color scheme and creative layout elements"
+              },
+              {
+                "score": 3,
+                "description": "Excellent creative design with outstanding visual appeal, masterful use of color scheme, and innovative layout that effectively communicates the SkillShare Academy brand"
+              }
+            ]
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Credit system visual integration",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "",
+          "calculation": {
+            "type": "scale",
+            "scale": [
+              {
+                "score": 0,
+                "description": "Credit system elements are not visually integrated or are confusing"
+              },
+              {
+                "score": 1,
+                "description": "Credit system elements are present but not well-integrated into the overall design"
+              },
+              {
+                "score": 2,
+                "description": "Credit system elements are well-integrated with consistent styling"
+              },
+              {
+                "score": 3,
+                "description": "Credit system elements are excellently integrated with creative visual treatment that enhances understanding and usability"
+              }
+            ]
           }
         }
       ]
     },
     {
       "name": "Technical Implementation and Validation",
+      "id": "A4",
       "aspects": [
         {
           "type": "measurement",
@@ -228,7 +316,7 @@
         {
           "type": "measurement",
           "description": "Modern CSS techniques implementation (Flexbox, CSS Variables)",
-          "maxMark": 1.5,
+          "maxMark": 1,
           "wsosSection": 4,
           "extraDescription": "Uses modern CSS3 features like Flexbox for layouts, CSS custom properties for colors, and modern selectors",
           "calculation": {
@@ -238,7 +326,7 @@
         {
           "type": "measurement",
           "description": "Mobile responsiveness (360×640 viewport)",
-          "maxMark": 1.25,
+          "maxMark": 1,
           "wsosSection": 4,
           "extraDescription": "Website works perfectly on mobile devices with proper layout adaptation and no horizontal scrolling",
           "calculation": {
@@ -248,7 +336,7 @@
         {
           "type": "measurement",
           "description": "Tablet responsiveness (768×1024 viewport)",
-          "maxMark": 0.75,
+          "maxMark": 0.5,
           "wsosSection": 4,
           "extraDescription": "Website adapts properly to tablet viewports with appropriate layout changes",
           "calculation": {
@@ -263,6 +351,62 @@
           "extraDescription": "Website displays correctly on desktop with proper layout and spacing",
           "calculation": {
             "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "CSS code quality and organization",
+          "maxMark": 0.75,
+          "wsosSection": 4,
+          "extraDescription": "",
+          "calculation": {
+            "type": "scale",
+            "scale": [
+              {
+                "score": 0,
+                "description": "CSS code is unorganized with poor structure and no meaningful class names"
+              },
+              {
+                "score": 1,
+                "description": "CSS code has basic organization but lacks consistent naming conventions"
+              },
+              {
+                "score": 2,
+                "description": "CSS code is well-organized with good structure and meaningful class names"
+              },
+              {
+                "score": 3,
+                "description": "CSS code is excellently organized with modular structure, meaningful class names, efficient use of modern CSS features, and easy maintainability"
+              }
+            ]
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Responsive design implementation quality",
+          "maxMark": 0.25,
+          "wsosSection": 4,
+          "extraDescription": "",
+          "calculation": {
+            "type": "scale",
+            "scale": [
+              {
+                "score": 0,
+                "description": "Poor responsive implementation with broken layouts on different devices"
+              },
+              {
+                "score": 1,
+                "description": "Basic responsive implementation with some layout issues on certain devices"
+              },
+              {
+                "score": 2,
+                "description": "Good responsive implementation that works well across different devices"
+              },
+              {
+                "score": 3,
+                "description": "Excellent responsive implementation with smooth transitions, optimal layouts for all devices, and thoughtful adaptation of content and interactions"
+              }
+            ]
           }
         }
       ]

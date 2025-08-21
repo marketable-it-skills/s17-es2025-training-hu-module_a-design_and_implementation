@@ -8,260 +8,262 @@
   },
   "subCriterions": [
     {
-      "name": "Project Structure and Organization",
+      "name": "Project Structure and File Organization",
       "aspects": [
         {
           "type": "measurement",
           "description": "All 4 required pages are implemented (Home, Courses, Mentors, About)",
+          "maxMark": 0.75,
           "wsosSection": 1,
+          "extraDescription": "All four main pages are present and accessible with basic content structure",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Less than 4 pages implemented"},
-              {"value": 0.5, "description": "4 pages implemented but some incomplete or missing key sections"},
-              {"value": 1, "description": "All 4 pages fully implemented with required content sections"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "File organization and logical folder structure (CSS, assets, images)",
+          "description": "Logical folder structure with separated assets",
+          "maxMark": 0.5,
           "wsosSection": 1,
+          "extraDescription": "CSS files, images, and icons are organized in appropriate folders (css/, assets/, images/, etc.)",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Poor organization with files scattered without logical structure"},
-              {"value": 0.5, "description": "Basic organization with some structure but inconsistent"},
-              {"value": 1, "description": "Excellent organization with clear separation of CSS, assets, and images"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "Consistent header with logo and navigation menu across all pages",
+          "description": "Consistent header with SkillShare Academy logo across all pages",
+          "maxMark": 0.5,
           "wsosSection": 1,
+          "extraDescription": "Header contains the SkillShare Academy logo and is consistent across all four pages",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Inconsistent or missing header/navigation elements"},
-              {"value": 0.5, "description": "Present on all pages but inconsistent styling or missing elements"},
-              {"value": 1, "description": "Consistent header with SkillShare Academy logo and navigation menu across all pages"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Navigation menu linking all pages correctly",
+          "maxMark": 0.5,
+          "wsosSection": 1,
+          "extraDescription": "Navigation menu is present and all links work correctly between pages",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Consistent footer across all pages",
+          "maxMark": 0.5,
+          "wsosSection": 1,
+          "extraDescription": "Footer is present on all pages with consistent styling and content",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "HTML file naming conventions and structure",
+          "maxMark": 0.25,
+          "wsosSection": 1,
+          "extraDescription": "Files are properly named (index.html, courses.html, mentors.html, about.html) and follow consistent structure",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
         }
       ]
     },
     {
-      "name": "Content Quality and Communication",
+      "name": "Content Communication and Theme Implementation",
       "aspects": [
         {
           "type": "measurement",
-          "description": "SkillShare Academy theme and credit-based learning concept clearly communicated",
+          "description": "SkillShare Academy free learning concept clearly communicated",
+          "maxMark": 0.5,
           "wsosSection": 2,
+          "extraDescription": "Website clearly explains the free course marketplace and community-based learning approach",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Theme unclear or credit system not explained"},
-              {"value": 0.5, "description": "Basic theme implementation with minimal credit system integration"},
-              {"value": 1, "description": "Clear communication of free courses and credit-based mentorship concept"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "Proper semantic HTML structure with appropriate headings hierarchy (h1-h6)",
+          "description": "Credit-based mentorship system explained",
+          "maxMark": 0.5,
           "wsosSection": 2,
+          "extraDescription": "Content explains how learners earn credits through course completion and use them for mentorship",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Poor or missing heading hierarchy, non-semantic markup"},
-              {"value": 0.5, "description": "Basic hierarchy present but some structural issues"},
-              {"value": 1, "description": "Clear semantic HTML5 structure with proper h1-h6 hierarchy"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Proper semantic HTML structure with heading hierarchy",
+          "maxMark": 0.75,
+          "wsosSection": 2,
+          "extraDescription": "Uses proper h1-h6 hierarchy, semantic tags (header, main, section, article, nav, footer)",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Accessibility features implemented (alt texts, aria labels)",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "extraDescription": "Images have meaningful alt text and interactive elements have appropriate ARIA labels",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
         }
       ]
     },
     {
-      "name": "Visual Design and User Experience",
+      "name": "Visual Design and Layout Implementation", 
       "aspects": [
         {
           "type": "measurement",
-          "description": "Home page hero section with two-column layout and call-to-action buttons",
+          "description": "Home page hero section with two-column layout",
+          "maxMark": 0.5,
           "wsosSection": 3,
+          "extraDescription": "Hero section has text content on left, image on right, with call-to-action buttons below text",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Missing hero section or poor layout implementation"},
-              {"value": 0.5, "description": "Basic hero section present but layout or CTA issues"},
-              {"value": 1, "description": "Professional hero section with proper two-column layout and effective CTAs"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "Course cards with credit earning badges and diamond icons implementation",
+          "description": "Course cards with credit earning badges and diamond icons",
+          "maxMark": 1,
           "wsosSection": 3,
+          "extraDescription": "Course cards display credit earning information with diamond icons and proper badge styling",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Missing credit badges or diamond icons"},
-              {"value": 0.5, "description": "Basic credit elements present but inconsistent styling"},
-              {"value": 1, "description": "Professional credit badges with diamond icons and clear credit information"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "Mentor profiles with credit rates and expertise information",
+          "description": "Mentor profiles with credit rates display",
+          "maxMark": 1,
           "wsosSection": 3,
+          "extraDescription": "Mentor cards show credit rates (8-15 credits/hour) with appropriate styling and expertise information",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Missing mentor credit rates or expertise information"},
-              {"value": 0.5, "description": "Basic mentor information present but incomplete credit rate display"},
-              {"value": 1, "description": "Complete mentor profiles with clear credit rates (8-15 credits/hour) and expertise"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "Vibrant purple-orange-cyan color scheme implementation",
+          "description": "Purple-orange-cyan color scheme implementation",
+          "maxMark": 1,
           "wsosSection": 3,
+          "extraDescription": "Uses specified vibrant purple (#7c3aed), orange (#f97316), cyan (#06b6d4) color palette consistently",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Color scheme doesn't follow specified palette or inconsistent"},
-              {"value": 0.5, "description": "Basic color implementation with some palette adherence"},
-              {"value": 1, "description": "Excellent use of vibrant purple (#7c3aed), orange (#f97316), cyan (#06b6d4) palette"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "Professional typography and visual consistency across all pages",
+          "description": "Typography consistency and hierarchy",
+          "maxMark": 0.75,
           "wsosSection": 3,
+          "extraDescription": "Consistent font family, proper text hierarchy, and good readability across all pages",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Inconsistent fonts, poor readability, or no coherent typography"},
-              {"value": 0.5, "description": "Basic typography with some consistency issues"},
-              {"value": 1, "description": "Excellent typography with consistent fonts, proper hierarchy, and good readability"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "Proper implementation and optimization of images, icons, and visual assets",
+          "description": "Card grid layouts with consistent spacing",
+          "maxMark": 0.75,
           "wsosSection": 3,
+          "extraDescription": "Course and mentor cards are arranged in proper grid layouts with consistent spacing and alignment",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Missing images/icons or poorly implemented visual assets"},
-              {"value": 0.5, "description": "Basic image implementation with some issues"},
-              {"value": 1, "description": "Professional image handling with proper alt texts, optimization, and placement"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Images and icons properly implemented",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Images are optimized, properly sized, and icons (SVG) are correctly placed and styled",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Visual consistency across all pages",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "All pages follow the same visual design system and branding consistency",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
         }
       ]
     },
     {
-      "name": "Technical Implementation and Standards",
+      "name": "Technical Implementation and Validation",
       "aspects": [
-        {
-          "type": "measurement",
-          "description": "HTML5 semantic markup with proper document structure",
-          "wsosSection": 4,
-          "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Non-semantic markup or poor document structure"},
-              {"value": 0.5, "description": "Basic semantic structure with some issues"},
-              {"value": 1, "description": "Excellent semantic HTML5 with proper section, article, nav, header, footer tags"}
-            ]
-          },
-          "maxMark": 1
-        },
         {
           "type": "measurement",
           "description": "W3C HTML validation compliance",
+          "maxMark": 1,
           "wsosSection": 4,
+          "extraDescription": "All HTML files pass W3C validation with no errors",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Multiple HTML validation errors"},
-              {"value": 0.5, "description": "Minor validation issues or warnings"},
-              {"value": 1, "description": "Full W3C HTML validation compliance with no errors"}
-            ]
-          },
-          "maxMark": 1
-        },
-        {
-          "type": "measurement",
-          "description": "CSS3 modern techniques and best practices (flexbox, grid, variables)",
-          "wsosSection": 4,
-          "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Poor CSS implementation or outdated techniques"},
-              {"value": 0.5, "description": "Basic CSS with some modern techniques"},
-              {"value": 1, "description": "Advanced CSS3 with flexbox, CSS variables, and modern layout techniques"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
           "description": "W3C CSS validation compliance",
+          "maxMark": 1,
           "wsosSection": 4,
+          "extraDescription": "CSS file passes W3C validation with no errors",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Multiple CSS validation errors"},
-              {"value": 0.5, "description": "Minor validation issues or warnings"},
-              {"value": 1, "description": "Full W3C CSS validation compliance with no errors"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "Mobile responsiveness (360×640) with proper layout adaptation",
+          "description": "Modern CSS techniques implementation (Flexbox, CSS Variables)",
+          "maxMark": 1.5,
           "wsosSection": 4,
+          "extraDescription": "Uses modern CSS3 features like Flexbox for layouts, CSS custom properties for colors, and modern selectors",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Not responsive on mobile or significant layout breaks"},
-              {"value": 0.5, "description": "Basic mobile responsiveness with some layout issues"},
-              {"value": 1, "description": "Excellent mobile experience with proper layout adaptation and no horizontal scrolling"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
         },
         {
           "type": "measurement",
-          "description": "Desktop responsiveness (1920×1080) and cross-browser compatibility",
+          "description": "Mobile responsiveness (360×640 viewport)",
+          "maxMark": 1.25,
           "wsosSection": 4,
+          "extraDescription": "Website works perfectly on mobile devices with proper layout adaptation and no horizontal scrolling",
           "calculation": {
-            "type": "options",
-            "options": [
-              {"value": 0, "description": "Poor desktop layout or browser compatibility issues"},
-              {"value": 0.5, "description": "Basic desktop layout with minor compatibility issues"},
-              {"value": 1, "description": "Excellent desktop experience working flawlessly across Chrome, Firefox, Safari, Edge"}
-            ]
-          },
-          "maxMark": 1
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Tablet responsiveness (768×1024 viewport)",
+          "maxMark": 0.75,
+          "wsosSection": 4,
+          "extraDescription": "Website adapts properly to tablet viewports with appropriate layout changes",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Desktop responsiveness (1920×1080 viewport)",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Website displays correctly on desktop with proper layout and spacing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
         }
       ]
     }

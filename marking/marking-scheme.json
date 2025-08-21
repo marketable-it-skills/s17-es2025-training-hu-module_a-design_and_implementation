@@ -8,7 +8,7 @@
   },
   "subCriterions": [
     {
-      "name": "Website Structure and Organization",
+      "name": "Project Structure and Organization",
       "aspects": [
         {
           "type": "measurement",
@@ -18,34 +18,34 @@
             "type": "options",
             "options": [
               {"value": 0, "description": "Less than 4 pages implemented"},
-              {"value": 0.5, "description": "4 pages but some incomplete"},
-              {"value": 1, "description": "All 4 pages fully implemented"}
+              {"value": 0.5, "description": "4 pages implemented but some incomplete or missing key sections"},
+              {"value": 1, "description": "All 4 pages fully implemented with required content sections"}
             ]
           },
           "maxMark": 1
         },
         {
           "type": "judgement",
-          "description": "File organization and naming conventions",
+          "description": "File organization, naming conventions, and project structure",
           "wsosSection": 1,
           "judgementScoreDescription": [
-            "Poor organization, inconsistent naming",
-            "Basic organization with some structure",
-            "Good organization with logical structure",
-            "Excellent organization following best practices"
+            "Poor organization, inconsistent naming, files scattered without logical structure",
+            "Basic organization with some structure, minor naming issues",
+            "Good organization with logical folder structure and consistent naming",
+            "Excellent organization following professional best practices with clear separation of assets"
           ],
           "maxMark": 1
         },
         {
           "type": "measurement",
-          "description": "Consistent navigation and footer across all pages",
+          "description": "Consistent header navigation and footer across all pages",
           "wsosSection": 1,
           "calculation": {
             "type": "options",
             "options": [
-              {"value": 0, "description": "Inconsistent or missing navigation/footer"},
-              {"value": 0.5, "description": "Present but inconsistent styling"},
-              {"value": 1, "description": "Consistent and functional across all pages"}
+              {"value": 0, "description": "Inconsistent or missing navigation/footer elements"},
+              {"value": 0.5, "description": "Present on all pages but inconsistent styling or functionality"},
+              {"value": 1, "description": "Consistent header with logo, navigation menu, and footer across all pages"}
             ]
           },
           "maxMark": 1
@@ -53,30 +53,30 @@
       ]
     },
     {
-      "name": "Content and Communication",
+      "name": "Content Quality and Presentation",
       "aspects": [
         {
           "type": "judgement",
-          "description": "Content clarity and professional presentation",
+          "description": "Content clarity, professional presentation, and SkillShare Academy theme implementation",
           "wsosSection": 2,
           "judgementScoreDescription": [
-            "Content unclear or unprofessional",
-            "Basic content with some clarity issues",
-            "Clear, well-presented content",
-            "Exceptional content presentation and clarity"
+            "Content unclear, unprofessional, or doesn't convey the credit-based learning theme",
+            "Basic content presentation with some clarity issues, minimal theme integration",
+            "Clear, well-presented content that effectively communicates the platform concept",
+            "Exceptional content presentation with compelling messaging about free courses and credit-based mentorship"
           ],
           "maxMark": 1
         },
         {
           "type": "measurement",
-          "description": "Appropriate use of headings, text hierarchy, and semantic structure",
+          "description": "Proper semantic HTML structure with appropriate headings hierarchy",
           "wsosSection": 2,
           "calculation": {
             "type": "options",
             "options": [
-              {"value": 0, "description": "Poor or missing text hierarchy"},
-              {"value": 0.5, "description": "Basic hierarchy with some issues"},
-              {"value": 1, "description": "Clear, semantic text hierarchy"}
+              {"value": 0, "description": "Poor or missing heading hierarchy, non-semantic markup"},
+              {"value": 0.5, "description": "Basic hierarchy present but some structural issues"},
+              {"value": 1, "description": "Clear semantic HTML5 structure with proper h1-h6 hierarchy and meaningful tags"}
             ]
           },
           "maxMark": 1
@@ -88,84 +88,99 @@
       "aspects": [
         {
           "type": "judgement",
-          "description": "Overall visual design quality and aesthetics",
+          "description": "Overall visual design quality, layout implementation, and aesthetics",
           "wsosSection": 3,
           "judgementScoreDescription": [
-            "Poor visual design, unappealing layout",
-            "Basic design with some visual issues",
-            "Good design that is visually appealing",
-            "Excellent design with professional appearance"
-          ],
-          "maxMark": 2
-        },
-        {
-          "type": "judgement",
-          "description": "Color scheme, typography, and visual consistency",
-          "wsosSection": 3,
-          "judgementScoreDescription": [
-            "Inconsistent colors/fonts, poor readability",
-            "Basic consistency with some issues",
-            "Good consistency and readability",
-            "Excellent typography and color harmony"
+            "Poor visual design with unappealing layouts and inconsistent visual elements",
+            "Basic design with adequate layouts but limited visual appeal or some inconsistencies",
+            "Good design with visually appealing layouts matching project requirements",
+            "Excellent professional design with exceptional visual appeal and perfect layout implementation"
           ],
           "maxMark": 2
         },
         {
           "type": "measurement",
-          "description": "Proper use of images and visual elements",
+          "description": "Credit system visual elements (badges, icons, rates) and SkillShare Academy branding",
           "wsosSection": 3,
           "calculation": {
             "type": "options",
             "options": [
-              {"value": 0, "description": "Missing or poorly implemented images"},
-              {"value": 1, "description": "Basic image implementation"},
-              {"value": 2, "description": "Professional image handling and optimization"}
+              {"value": 0, "description": "Missing credit system visual elements or poor branding implementation"},
+              {"value": 0.5, "description": "Basic credit badges and branding present but inconsistent or poorly styled"},
+              {"value": 1, "description": "Well-designed credit system elements with diamond icons, rates, and consistent branding"},
+              {"value": 1.5, "description": "Excellent credit system visualization with professional badges, icons, and cohesive branding"}
             ]
           },
-          "maxMark": 2
+          "maxMark": 1.5
+        },
+        {
+          "type": "judgement",
+          "description": "Color scheme, typography, and visual consistency following style guide",
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "Inconsistent colors and fonts, poor readability, no coherent visual identity",
+            "Basic consistency with some issues, acceptable readability but limited visual harmony",
+            "Good consistency and readability with appropriate color scheme and typography",
+            "Excellent typography and color harmony with vibrant purple-orange-cyan palette as specified"
+          ],
+          "maxMark": 1.5
+        },
+        {
+          "type": "measurement",
+          "description": "Proper implementation of images, icons, and visual assets",
+          "wsosSection": 3,
+          "calculation": {
+            "type": "options",
+            "options": [
+              {"value": 0, "description": "Missing images/icons or poorly implemented visual assets"},
+              {"value": 0.5, "description": "Basic image implementation with some optimization or placement issues"},
+              {"value": 1, "description": "Professional image handling with proper optimization, alt texts, and placement"}
+            ]
+          },
+          "maxMark": 1
         }
       ]
     },
     {
-      "name": "Technical Implementation",
+      "name": "Technical Implementation and Standards",
       "aspects": [
         {
           "type": "measurement",
-          "description": "HTML5 semantic markup and W3C validation",
+          "description": "HTML5 semantic markup and W3C validation compliance",
           "wsosSection": 4,
           "calculation": {
             "type": "options",
             "options": [
-              {"value": 0, "description": "Invalid HTML or non-semantic markup"},
-              {"value": 1, "description": "Valid HTML with basic semantic structure"},
-              {"value": 2, "description": "Excellent semantic HTML5 with full validation"}
+              {"value": 0, "description": "Invalid HTML with validation errors or non-semantic markup"},
+              {"value": 1, "description": "Valid HTML with basic semantic structure and minimal validation issues"},
+              {"value": 2, "description": "Excellent semantic HTML5 structure with full W3C validation compliance"}
             ]
           },
           "maxMark": 2
         },
         {
           "type": "measurement",
-          "description": "CSS3 implementation and validation",
+          "description": "CSS3 implementation, validation, and modern techniques",
           "wsosSection": 4,
           "calculation": {
             "type": "options",
             "options": [
-              {"value": 0, "description": "Invalid or poor CSS implementation"},
-              {"value": 1, "description": "Valid CSS with basic styling"},
-              {"value": 2, "description": "Advanced CSS3 with excellent validation"}
+              {"value": 0, "description": "Invalid CSS or poor implementation with significant issues"},
+              {"value": 1, "description": "Valid CSS with basic styling and minor validation issues"},
+              {"value": 2, "description": "Advanced CSS3 with excellent validation, modern techniques, and optimal organization"}
             ]
           },
           "maxMark": 2
         },
         {
           "type": "judgement",
-          "description": "Responsive design across mobile, tablet, and desktop",
+          "description": "Responsive design implementation across mobile (360×640), tablet (768×1024), and desktop (1920×1080)",
           "wsosSection": 4,
           "judgementScoreDescription": [
-            "Not responsive or breaks on different screen sizes",
-            "Basic responsiveness with some layout issues", 
-            "Good responsive behavior across most devices",
-            "Excellent responsive design across all target devices"
+            "Not responsive or breaks significantly on different screen sizes",
+            "Basic responsiveness with noticeable layout issues on some devices", 
+            "Good responsive behavior across target devices with minor issues",
+            "Excellent responsive design that works flawlessly across all specified viewport sizes"
           ],
           "maxMark": 2
         }

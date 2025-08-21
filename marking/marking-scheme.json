@@ -14,7 +14,7 @@
         {
           "type": "measurement",
           "description": "All 4 required pages are implemented (Home, Courses, Mentors, About)",
-          "maxMark": 0.75,
+          "maxMark": 0.25,
           "wsosSection": 1,
           "extraDescription": "All four main pages are present and accessible with basic content structure",
           "calculation": {
@@ -74,7 +74,7 @@
         {
           "type": "judgement",
           "description": "Code organization and maintainability",
-          "maxMark": 0,
+          "maxMark": 0.5,
           "wsosSection": 1,
           "extraDescription": "",
           "calculation": {

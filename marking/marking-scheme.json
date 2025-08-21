@@ -2,13 +2,13 @@
   "totalMark": 17,
   "wsosSections": {
     "1": "Work organization and self-management",
-    "2": "Communication and interpersonal skills", 
+    "2": "Communication and interpersonal skills",
     "3": "Design Implementation",
     "4": "Front-End Development"
   },
   "subCriterions": [
     {
-      "name": "Project Structure and File Organization",
+      "name": "Project Structure and File Organization!!!",
       "aspects": [
         {
           "type": "measurement",

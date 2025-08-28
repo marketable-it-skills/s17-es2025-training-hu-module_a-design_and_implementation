@@ -158,7 +158,7 @@
       "aspects": [
         {
           "type": "measurement",
-          "description": "Hero section with two-column layout (desktop)",
+          "description": "Hero section with two-column layout and call-to-action buttons",
           "maxMark": 0.5,
           "wsosSection": 3,
           "extraDescription": "Test: On desktop view, verify hero section displays text content on left, image on right, with two call-to-action buttons below text",
@@ -168,40 +168,10 @@
         },
         {
           "type": "measurement",
-          "description": "Platform benefits section with 6 benefit cards",
-          "maxMark": 0.5,
+          "description": "All required Home page sections are present",
+          "maxMark": 1.5,
           "wsosSection": 3,
-          "extraDescription": "Test: Check that benefits section displays 6 cards in grid layout, each with SVG icon, title, and description about credit system",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Community impact statistics section",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: Verify statistics section shows one large prominent statistic plus grid of smaller statistical items with community metrics",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Featured courses section with credit earning badges",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: Check course cards include image, title, instructor, rating with stars and numbers, duration, and credit earning badge with diamond icon",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Testimonials section with community success stories",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: Verify testimonials section displays grid of testimonial cards with specific credit amounts earned/used by community members",
+          "extraDescription": "Test: Check for platform benefits (6 cards), community impact statistics, featured courses with credit badges, and testimonials sections",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -213,30 +183,10 @@
       "aspects": [
         {
           "type": "measurement",
-          "description": "Page hero section with credit system explanation",
-          "maxMark": 0.5,
+          "description": "All required Courses page sections are present",
+          "maxMark": 1,
           "wsosSection": 3,
-          "extraDescription": "Test: Check hero section has heading, description, and highlighted credit system explanation with diamond icon",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Course filters with category tabs and search bar",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: Verify filter section includes category buttons (All Free Courses, Development, Data Science, Marketing, Design, Business) and search bar with icon",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Course cards contain all required elements",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: Each course card includes image, title, instructor name, star rating with numbers, duration, skill level, credit badge with diamond icon, description, 'FREE' price, enrollment button",
+          "extraDescription": "Test: Check for hero section with credit explanation, course filters (categories + search), and complete course cards with all elements (image, title, instructor, rating, credit badge, 'FREE' price, button)",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -248,30 +198,10 @@
       "aspects": [
         {
           "type": "measurement",
-          "description": "Mentor filters with search and dropdown controls",
-          "maxMark": 0.5,
+          "description": "All required Mentors page sections are present",
+          "maxMark": 1,
           "wsosSection": 3,
-          "extraDescription": "Test: Check filter section includes search bar and three dropdown selectors for expertise areas, experience levels, and rating filters",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Featured mentors section with special badges",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: Featured mentor cards have special badge, photo, detailed info (name, title, company, rating), skill tags, statistics, credit rate badge with diamond icon",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Mentor cards display credit rates correctly",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: All mentor cards show credit rate badge with diamond icon indicating different rates (8-15 credits per hour based on expertise)",
+          "extraDescription": "Test: Check for mentor filters (search + dropdowns), featured mentors section with special badges, and mentor cards with credit rate badges showing diamond icon and variable rates (8-15 credits per hour)",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -283,30 +213,10 @@
       "aspects": [
         {
           "type": "measurement",
-          "description": "Mission and vision section with two-column layout",
-          "maxMark": 0.5,
+          "description": "All required About page sections are present",
+          "maxMark": 1,
           "wsosSection": 3,
-          "extraDescription": "Test: On desktop, verify two-column layout with mission text on left, image on right, and vision statement below",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Community leaders section with team profiles",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: Team member cards include photo, name, role title, bio description focusing on credit system responsibilities, social media links with icons",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Contact section with form and contact information",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: Two-column layout with contact info on left (email, phone, address, support hours with icons) and contact form on right (name, email, subject dropdown, message, submit button)",
+          "extraDescription": "Test: Check for mission/vision section (two-column layout), community leaders with team profiles, community story with timeline, and contact section with form and information",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -318,20 +228,10 @@
       "aspects": [
         {
           "type": "measurement",
-          "description": "Purple-orange-cyan color scheme implementation",
-          "maxMark": 0.75,
+          "description": "SkillShare Academy color scheme and branding",
+          "maxMark": 0.25,
           "wsosSection": 3,
-          "extraDescription": "Test: Check for consistent use of purple (#7c3aed), orange (#f97316), cyan (#06b6d4) color palette throughout the site",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Credit badges use proper gradient styling",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Test: Verify credit earning badges use cyan-to-green gradient and mentor rate badges use purple-to-orange gradient",
+          "extraDescription": "Test: Check for consistent use of purple-orange-cyan color palette and proper gradient styling on credit badges (cyan-to-green for earning, purple-to-orange for rates)",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -356,19 +256,19 @@
         {
           "type": "judgement",
           "description": "Mobile responsiveness (360×640)",
-          "maxMark": 1,
+          "maxMark": 0.75,
           "wsosSection": 4,
           "judgementScoreDescription": [
             "Website is completely broken on mobile viewport, content overflows or is unreadable",
             "Basic mobile layout works but has significant issues with spacing, readability, or functionality",
             "Good mobile responsive design with proper layout adaptation, readable text, and usable navigation",
-            "Excellent mobile experience with optimized layouts, perfect readability, smooth interactions, and thoughtful mobile-specific design choices"
+            "Excellent mobile experience with optimized layouts, perfect readability, and thoughtful mobile-specific design choices"
           ]
         },
         {
           "type": "judgement",
           "description": "Tablet responsiveness (768×1024)",
-          "maxMark": 0.75,
+          "maxMark": 0.5,
           "wsosSection": 4,
           "judgementScoreDescription": [
             "Website layout is broken or poorly adapted for tablet viewport",
@@ -380,7 +280,7 @@
         {
           "type": "judgement",
           "description": "Desktop responsiveness and layout quality (1920×1080)",
-          "maxMark": 1,
+          "maxMark": 0.75,
           "wsosSection": 4,
           "judgementScoreDescription": [
             "Desktop layout is poorly implemented with bad spacing or broken elements",
@@ -402,48 +302,53 @@
       ]
     },
     {
+      "name": "Code Quality and Organization",
+      "aspects": [
+        {
+          "type": "judgement",
+          "description": "CSS code organization and maintainability",
+          "maxMark": 1,
+          "wsosSection": 1,
+          "judgementScoreDescription": [
+            "CSS code is unorganized with poor structure and no meaningful class names",
+            "CSS code has basic organization but lacks consistent naming conventions",
+            "CSS code is well-organized with good structure and meaningful class names",
+            "CSS code is excellently organized with modular structure, meaningful class names, and efficient use of modern CSS features"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Web Standards and Technical Compliance",
       "aspects": [
         {
           "type": "judgement",
-          "description": "W3C HTML validation compliance",
+          "description": "W3C validation compliance (HTML and CSS)",
           "maxMark": 0.75,
           "wsosSection": 4,
           "judgementScoreDescription": [
-            "W3C validator reports more than 5 HTML errors per page",
-            "W3C validator reports 3-5 HTML errors per page",
-            "W3C validator reports 1-2 HTML errors per page",
-            "W3C validator reports no HTML errors on all implemented pages"
+            "W3C validators report more than 5 errors per page for HTML or CSS",
+            "W3C validators report 3-5 errors per page for HTML or CSS",
+            "W3C validators report 1-2 errors per page for HTML or CSS",
+            "W3C validators report no HTML or CSS errors on all implemented pages"
           ]
         },
         {
           "type": "judgement",
-          "description": "W3C CSS validation compliance",
-          "maxMark": 0.75,
-          "wsosSection": 4,
-          "judgementScoreDescription": [
-            "W3C CSS validator reports more than 5 CSS errors",
-            "W3C CSS validator reports 3-5 CSS errors",
-            "W3C CSS validator reports 1-2 CSS errors",
-            "W3C CSS validator reports no CSS errors"
-          ]
-        },
-        {
-          "type": "judgement",
-          "description": "Semantic HTML structure and accessibility",
+          "description": "SEO and accessibility implementation",
           "maxMark": 1,
           "wsosSection": 4,
           "judgementScoreDescription": [
-            "Poor semantic HTML with mostly divs, no accessibility features, missing alt text",
-            "Basic semantic HTML with some proper tags (header, nav, main, footer) and minimal accessibility features",
-            "Good semantic HTML structure with proper heading hierarchy, meaningful tags, and basic accessibility features",
-            "Excellent semantic HTML with comprehensive use of appropriate tags, perfect heading hierarchy, comprehensive alt text, and advanced accessibility features"
+            "Poor implementation with missing title tags, meta descriptions, alt text, and no accessibility features",
+            "Basic implementation with some title tags and alt text but inconsistent across pages",
+            "Good implementation with proper semantic HTML, title tags, meta descriptions, and basic accessibility features",
+            "Excellent implementation with comprehensive SEO (titles, meta, headings) and WCAG AA accessibility standards (alt text, focus states, contrast)"
           ]
         },
         {
           "type": "judgement",
           "description": "Cross-browser compatibility",
-          "maxMark": 0.75,
+          "maxMark": 0.5,
           "wsosSection": 4,
           "judgementScoreDescription": [
             "Website is completely broken in either Chrome or Firefox",

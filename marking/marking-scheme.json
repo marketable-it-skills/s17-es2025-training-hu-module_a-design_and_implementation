@@ -4,125 +4,59 @@
     "1": "Work organization and self-management",
     "2": "Communication and interpersonal skills",
     "3": "Design Implementation",
-    "4": "Front-End Development"
+    "4": "Front-End Development",
+    "5": "Back-End Development"
   },
   "subCriterions": [
     {
-      "name": "Project Structure and File Organization!!!",
+      "name": "Project Structure and File Organization",
       "aspects": [
         {
           "type": "measurement",
-          "description": "All 4 required pages are implemented (Home, Courses, Mentors, About)",
+          "description": "All 4 required pages are implemented",
+          "maxMark": 0.5,
+          "wsosSection": 1,
+          "extraDescription": "Test: Check that index.html (Home), courses.html, mentors.html, and about.html files exist in the /src directory",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Home page is accessible at index.html",
           "maxMark": 0.25,
           "wsosSection": 1,
-          "extraDescription": "All four main pages are present and accessible with basic content structure",
+          "extraDescription": "Test: Navigate to index.html directly and verify it loads the Home page content",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Logical folder structure with separated assets",
-          "maxMark": 0.5,
-          "wsosSection": 1,
-          "extraDescription": "CSS files, images, and icons are organized in appropriate folders (css/, assets/, images/, etc.)",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Consistent header with SkillShare Academy logo across all pages",
-          "maxMark": 0.5,
-          "wsosSection": 1,
-          "extraDescription": "Header contains the SkillShare Academy logo and is consistent across all four pages",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Navigation menu linking all pages correctly",
-          "maxMark": 0.5,
-          "wsosSection": 1,
-          "extraDescription": "Navigation menu is present and all links work correctly between pages",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Consistent footer across all pages",
-          "maxMark": 0.5,
-          "wsosSection": 1,
-          "extraDescription": "Footer is present on all pages with consistent styling and content",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "HTML file naming conventions and structure",
+          "description": "CSS files are properly organized in css/ directory",
           "maxMark": 0.25,
           "wsosSection": 1,
-          "extraDescription": "Files are properly named (index.html, courses.html, mentors.html, about.html) and follow consistent structure",
+          "extraDescription": "Test: Check that main CSS file exists in /src/css/ directory and is properly linked in HTML files",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
-          "type": "judgement",
-          "description": "Code organization and maintainability",
-          "maxMark": 0.5,
+          "type": "measurement",
+          "description": "Assets are organized in appropriate directories",
+          "maxMark": 0.25,
           "wsosSection": 1,
-          "judgementScoreDescription": [
-            "HTML files are unorganized with poor indentation and no meaningful structure",
-            "HTML files have basic indentation but lack semantic structure",
-            "HTML files are well-organized with good indentation and some semantic elements",
-            "HTML files are excellently organized with proper indentation, semantic elements, and clear structure for easy maintenance"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Content Communication and Theme Implementation",
-      "aspects": [
-        {
-          "type": "measurement",
-          "description": "SkillShare Academy free learning concept clearly communicated",
-          "maxMark": 0.5,
-          "wsosSection": 2,
-          "extraDescription": "Website clearly explains the free course marketplace and community-based learning approach",
+          "extraDescription": "Test: Verify images are in /src/assets/images/ or similar organized structure, not scattered in root",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Credit-based mentorship system explained",
-          "maxMark": 0.5,
-          "wsosSection": 2,
-          "extraDescription": "Content explains how learners earn credits through course completion and use them for mentorship",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Proper semantic HTML structure with heading hierarchy",
+          "description": "No server-side or client-side frameworks used",
           "maxMark": 0.75,
-          "wsosSection": 2,
-          "extraDescription": "Uses proper h1-h6 hierarchy, semantic tags (header, main, section, article, nav, footer)",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Accessibility features implemented (alt texts, aria labels)",
-          "maxMark": 0.25,
-          "wsosSection": 2,
-          "extraDescription": "Images have meaningful alt text and interactive elements have appropriate ARIA labels",
+          "wsosSection": 1,
+          "extraDescription": "Test: Check HTML files and dependencies - only HTML5 and CSS3 should be used, no React, Vue, Bootstrap, etc.",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -130,84 +64,274 @@
       ]
     },
     {
-      "name": "Visual Design and Layout Implementation",
+      "name": "Header and Navigation Implementation",
       "aspects": [
         {
           "type": "measurement",
-          "description": "Home page hero section with two-column layout",
+          "description": "Header contains SkillShare Academy logo",
+          "maxMark": 0.5,
+          "wsosSection": 2,
+          "extraDescription": "Test: Check that header includes SkillShare Academy logo (text or image) on the left side, preferably the vertical purple logo",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Navigation links to all 4 main pages",
+          "maxMark": 0.5,
+          "wsosSection": 2,
+          "extraDescription": "Test: Click each navigation link (Home, Courses, Mentors, About) and verify they navigate to correct pages",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Header and navigation are consistent across all pages",
+          "maxMark": 0.5,
+          "wsosSection": 2,
+          "extraDescription": "Test: Visit all 4 pages and verify header/navigation look identical (except active page highlighting is allowed)",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Mobile hamburger menu implemented (CSS-only)",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Resize browser to mobile width (360px) and verify hamburger menu appears and functions without JavaScript",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Footer Implementation",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Footer includes copyright notice",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "extraDescription": "Test: Check that footer contains copyright notice with current year or appropriate text",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Footer has four-column layout structure (desktop)",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "Test: On desktop view (1920px), verify footer displays in four-column layout with company info, Learn, Support, and Company sections",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Social media icons are present and properly styled",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "Test: Check that footer includes social media icons for Facebook, Twitter, LinkedIn, Instagram (can be placeholder links)",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Footer is consistent across all pages",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "extraDescription": "Test: Visit all 4 pages and verify footer content and styling are identical",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Home Page Content and Layout",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Hero section with two-column layout (desktop)",
           "maxMark": 0.5,
           "wsosSection": 3,
-          "extraDescription": "Hero section has text content on left, image on right, with call-to-action buttons below text",
+          "extraDescription": "Test: On desktop view, verify hero section displays text content on left, image on right, with two call-to-action buttons below text",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Course cards with credit earning badges and diamond icons",
-          "maxMark": 1,
+          "description": "Platform benefits section with 6 benefit cards",
+          "maxMark": 0.5,
           "wsosSection": 3,
-          "extraDescription": "Course cards display credit earning information with diamond icons and proper badge styling",
+          "extraDescription": "Test: Check that benefits section displays 6 cards in grid layout, each with SVG icon, title, and description about credit system",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Mentor profiles with credit rates display",
-          "maxMark": 1,
+          "description": "Community impact statistics section",
+          "maxMark": 0.5,
           "wsosSection": 3,
-          "extraDescription": "Mentor cards show credit rates (8-15 credits/hour) with appropriate styling and expertise information",
+          "extraDescription": "Test: Verify statistics section shows one large prominent statistic plus grid of smaller statistical items with community metrics",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
+        {
+          "type": "measurement",
+          "description": "Featured courses section with credit earning badges",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Check course cards include image, title, instructor, rating with stars and numbers, duration, and credit earning badge with diamond icon",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Testimonials section with community success stories",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Verify testimonials section displays grid of testimonial cards with specific credit amounts earned/used by community members",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Courses Page Content and Layout",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Page hero section with credit system explanation",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Check hero section has heading, description, and highlighted credit system explanation with diamond icon",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Course filters with category tabs and search bar",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Verify filter section includes category buttons (All Free Courses, Development, Data Science, Marketing, Design, Business) and search bar with icon",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Course cards contain all required elements",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Each course card includes image, title, instructor name, star rating with numbers, duration, skill level, credit badge with diamond icon, description, 'FREE' price, enrollment button",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mentors Page Content and Layout",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Mentor filters with search and dropdown controls",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Check filter section includes search bar and three dropdown selectors for expertise areas, experience levels, and rating filters",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Featured mentors section with special badges",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Featured mentor cards have special badge, photo, detailed info (name, title, company, rating), skill tags, statistics, credit rate badge with diamond icon",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Mentor cards display credit rates correctly",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: All mentor cards show credit rate badge with diamond icon indicating different rates (8-15 credits per hour based on expertise)",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "About Page Content and Layout",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Mission and vision section with two-column layout",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: On desktop, verify two-column layout with mission text on left, image on right, and vision statement below",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Community leaders section with team profiles",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Team member cards include photo, name, role title, bio description focusing on credit system responsibilities, social media links with icons",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Contact section with form and contact information",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Test: Two-column layout with contact info on left (email, phone, address, support hours with icons) and contact form on right (name, email, subject dropdown, message, submit button)",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Visual Design and Style Implementation",
+      "aspects": [
         {
           "type": "measurement",
           "description": "Purple-orange-cyan color scheme implementation",
-          "maxMark": 0.5,
+          "maxMark": 0.75,
           "wsosSection": 3,
-          "extraDescription": "Uses specified vibrant purple (#7c3aed), orange (#f97316), cyan (#06b6d4) color palette consistently",
+          "extraDescription": "Test: Check for consistent use of purple (#7c3aed), orange (#f97316), cyan (#06b6d4) color palette throughout the site",
           "calculation": {
             "type": "pass-or-fail"
           }
         },
         {
           "type": "measurement",
-          "description": "Typography consistency and hierarchy",
+          "description": "Credit badges use proper gradient styling",
           "maxMark": 0.5,
           "wsosSection": 3,
-          "extraDescription": "Consistent font family, proper text hierarchy, and good readability across all pages",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Card grid layouts with consistent spacing",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Course and mentor cards are arranged in proper grid layouts with consistent spacing and alignment",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Images and icons properly implemented",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "Images are optimized, properly sized, and icons (SVG) are correctly placed and styled",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Visual consistency across all pages",
-          "maxMark": 0.5,
-          "wsosSection": 3,
-          "extraDescription": "All pages follow the same visual design system and branding consistency",
+          "extraDescription": "Test: Verify credit earning badges use cyan-to-green gradient and mentor rate badges use purple-to-orange gradient",
           "calculation": {
             "type": "pass-or-fail"
           }
@@ -215,114 +339,117 @@
         {
           "type": "judgement",
           "description": "Overall visual design quality and creativity",
-          "maxMark": 0.75,
+          "maxMark": 1,
           "wsosSection": 3,
           "judgementScoreDescription": [
             "Design lacks creativity and visual appeal, poor use of color scheme and layout",
-            "Design has basic visual appeal but limited creativity in layout and color usage",
+            "Design has basic visual appeal but limited creativity in layout and color usage", 
             "Design is visually appealing with good use of color scheme and creative layout elements",
             "Excellent creative design with outstanding visual appeal, masterful use of color scheme, and innovative layout that effectively communicates the SkillShare Academy brand"
-          ]
-        },
-        {
-          "type": "judgement",
-          "description": "Credit system visual integration",
-          "maxMark": 0.25,
-          "wsosSection": 3,
-          "judgementScoreDescription": [
-            "Credit system elements are not visually integrated or are confusing",
-            "Credit system elements are present but not well-integrated into the overall design",
-            "Credit system elements are well-integrated with consistent styling",
-            "Credit system elements are excellently integrated with creative visual treatment that enhances understanding and usability"
           ]
         }
       ]
     },
     {
-      "name": "Technical Implementation and Validation",
+      "name": "Responsive Design Implementation",
       "aspects": [
         {
-          "type": "measurement",
-          "description": "W3C HTML validation compliance",
-          "maxMark": 1,
-          "wsosSection": 4,
-          "extraDescription": "All HTML files pass W3C validation with no errors",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "W3C CSS validation compliance",
-          "maxMark": 1,
-          "wsosSection": 4,
-          "extraDescription": "CSS file passes W3C validation with no errors",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Modern CSS techniques implementation (Flexbox, CSS Variables)",
-          "maxMark": 1,
-          "wsosSection": 4,
-          "extraDescription": "Uses modern CSS3 features like Flexbox for layouts, CSS custom properties for colors, and modern selectors",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Mobile responsiveness (360×640 viewport)",
-          "maxMark": 1,
-          "wsosSection": 4,
-          "extraDescription": "Website works perfectly on mobile devices with proper layout adaptation and no horizontal scrolling",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Tablet responsiveness (768×1024 viewport)",
-          "maxMark": 0.5,
-          "wsosSection": 4,
-          "extraDescription": "Website adapts properly to tablet viewports with appropriate layout changes",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
-          "type": "measurement",
-          "description": "Desktop responsiveness (1920×1080 viewport)",
-          "maxMark": 0.25,
-          "wsosSection": 4,
-          "extraDescription": "Website displays correctly on desktop with proper layout and spacing",
-          "calculation": {
-            "type": "pass-or-fail"
-          }
-        },
-        {
           "type": "judgement",
-          "description": "CSS code quality and organization",
-          "maxMark": 0.75,
+          "description": "Mobile responsiveness (360×640)",
+          "maxMark": 1,
           "wsosSection": 4,
           "judgementScoreDescription": [
-            "CSS code is unorganized with poor structure and no meaningful class names",
-            "CSS code has basic organization but lacks consistent naming conventions",
-            "CSS code is well-organized with good structure and meaningful class names",
-            "CSS code is excellently organized with modular structure, meaningful class names, efficient use of modern CSS features, and easy maintainability"
+            "Website is completely broken on mobile viewport, content overflows or is unreadable",
+            "Basic mobile layout works but has significant issues with spacing, readability, or functionality",
+            "Good mobile responsive design with proper layout adaptation, readable text, and usable navigation",
+            "Excellent mobile experience with optimized layouts, perfect readability, smooth interactions, and thoughtful mobile-specific design choices"
           ]
         },
         {
           "type": "judgement",
-          "description": "Responsive design implementation quality",
-          "maxMark": 0.25,
+          "description": "Tablet responsiveness (768×1024)",
+          "maxMark": 0.75,
           "wsosSection": 4,
           "judgementScoreDescription": [
-            "Poor responsive implementation with broken layouts on different devices",
-            "Basic responsive implementation with some layout issues on certain devices",
-            "Good responsive implementation that works well across different devices",
-            "Excellent responsive implementation with smooth transitions, optimal layouts for all devices, and thoughtful adaptation of content and interactions"
+            "Website layout is broken or poorly adapted for tablet viewport",
+            "Basic tablet layout works but lacks optimization for the medium screen size",
+            "Good tablet responsive design with appropriate column adjustments and spacing",
+            "Excellent tablet experience with optimized layouts that make effective use of the medium screen real estate"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "Desktop responsiveness and layout quality (1920×1080)",
+          "maxMark": 1,
+          "wsosSection": 4,
+          "judgementScoreDescription": [
+            "Desktop layout is poorly implemented with bad spacing or broken elements",
+            "Basic desktop layout works but lacks polish in spacing and visual hierarchy",
+            "Good desktop layout with proper use of space, clear visual hierarchy, and effective multi-column layouts",
+            "Excellent desktop experience with outstanding use of large screen space, perfect visual hierarchy, and sophisticated layout techniques"
+          ]
+        },
+        {
+          "type": "measurement",
+          "description": "Smooth responsive behavior between breakpoints",
+          "maxMark": 0.5,
+          "wsosSection": 4,
+          "extraDescription": "Test: Resize browser window gradually from 360px to 1920px width and verify no horizontal scrolling, content remains readable, and layout transitions smoothly",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Web Standards and Technical Compliance",
+      "aspects": [
+        {
+          "type": "judgement",
+          "description": "W3C HTML validation compliance",
+          "maxMark": 0.75,
+          "wsosSection": 4,
+          "judgementScoreDescription": [
+            "W3C validator reports more than 5 HTML errors per page",
+            "W3C validator reports 3-5 HTML errors per page",
+            "W3C validator reports 1-2 HTML errors per page",
+            "W3C validator reports no HTML errors on all implemented pages"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "W3C CSS validation compliance",
+          "maxMark": 0.75,
+          "wsosSection": 4,
+          "judgementScoreDescription": [
+            "W3C CSS validator reports more than 5 CSS errors",
+            "W3C CSS validator reports 3-5 CSS errors",
+            "W3C CSS validator reports 1-2 CSS errors",
+            "W3C CSS validator reports no CSS errors"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "Semantic HTML structure and accessibility",
+          "maxMark": 1,
+          "wsosSection": 4,
+          "judgementScoreDescription": [
+            "Poor semantic HTML with mostly divs, no accessibility features, missing alt text",
+            "Basic semantic HTML with some proper tags (header, nav, main, footer) and minimal accessibility features",
+            "Good semantic HTML structure with proper heading hierarchy, meaningful tags, and basic accessibility features",
+            "Excellent semantic HTML with comprehensive use of appropriate tags, perfect heading hierarchy, comprehensive alt text, and advanced accessibility features"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "Cross-browser compatibility",
+          "maxMark": 0.75,
+          "wsosSection": 4,
+          "judgementScoreDescription": [
+            "Website is completely broken in either Chrome or Firefox",
+            "Major visual or functional differences between Chrome and Firefox",
+            "Minor differences between browsers but mostly consistent appearance",
+            "Website looks and functions identically in Chrome, Firefox, Safari, and Edge"
           ]
         }
       ]

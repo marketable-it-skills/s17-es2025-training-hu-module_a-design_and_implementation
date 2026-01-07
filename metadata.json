@@ -3,7 +3,9 @@
   "displayName": "SkillShare Academy - Static Website Design",
   "description": "Create a responsive static website for SkillShare Academy digital learning platform using HTML5 and CSS3.",
   "url": "https://github.com/marketable-it-skills/s17-es2025-training-hu-module_a-design_and_implementation",
-  "skillDomainIds": [1],
+  "skillDomainIds": [
+    1
+  ],
   "competition": "EuroSkills 2025 Training Competition - Hungary",
   "estTime": 3,
   "authors": [
@@ -12,7 +14,11 @@
       "url": "https://skillsit.hu"
     }
   ],
-  "technologies": ["HTML5", "CSS3", "Responsive Design"],
+  "technologies": [
+    "HTML5",
+    "CSS3",
+    "Responsive Design"
+  ],
   "tags": [
     "frontend",
     "static website",
@@ -23,5 +29,6 @@
     "flexbox",
     "digital learning platform",
     "skillshare academy"
-  ]
+  ],
+  "status": "draft"
 }
